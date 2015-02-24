@@ -13,6 +13,7 @@
     IBOutlet UIDatePicker *dateTimePicker;
 }
 
+-(void) scheduleLocalNotificationWithDate: (NSDate *) fireDate;
 -(IBAction) alarmsetbuttontTapped:(id)sensor;
 -(IBAction) alarmcancelbuttontTapped:(id)sensor;
 

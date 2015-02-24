@@ -15,6 +15,7 @@
 		380F3EF01A9BA97600962671 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380F3EEF1A9BA97600962671 /* Images.xcassets */; };
 		380F3EF31A9BA97600962671 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380F3EF11A9BA97600962671 /* LaunchScreen.xib */; };
 		380F3EFF1A9BA97600962671 /* AlarmClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F3EFE1A9BA97600962671 /* AlarmClockTests.m */; };
+		386567211A9CE2F100A10D16 /* tornado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 386567201A9CE2F100A10D16 /* tornado.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		380F3EF81A9BA97600962671 /* AlarmClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		380F3EFD1A9BA97600962671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		380F3EFE1A9BA97600962671 /* AlarmClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlarmClockTests.m; sourceTree = "<group>"; };
+		386567201A9CE2F100A10D16 /* tornado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tornado.mp3; path = ../../../Downloads/tornado.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		380F3EDF1A9BA97600962671 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				386567201A9CE2F100A10D16 /* tornado.mp3 */,
 				380F3EE01A9BA97600962671 /* Info.plist */,
 				380F3EE11A9BA97600962671 /* main.m */,
 			);
@@ -206,6 +209,7 @@
 			files = (
 				380F3EEE1A9BA97600962671 /* Main.storyboard in Resources */,
 				380F3EF31A9BA97600962671 /* LaunchScreen.xib in Resources */,
+				386567211A9CE2F100A10D16 /* tornado.mp3 in Resources */,
 				380F3EF01A9BA97600962671 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +424,7 @@
 				380F3F041A9BA97600962671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		380F3F051A9BA97600962671 /* Build configuration list for PBXNativeTarget "AlarmClockTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +433,7 @@
 				380F3F071A9BA97600962671 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

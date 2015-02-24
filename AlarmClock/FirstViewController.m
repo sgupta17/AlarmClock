@@ -16,16 +16,46 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    dateTimePicker.date = [NSDate date];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+/*
+- (void)viewDidUnload {
+    [super viewDidUnload];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+-(void) scheduleLocalNotificationWithDate:(NSDate *)fireDate {
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.fireDate = fireDate;
+    notification.alertBody = @"Time to Wake Up";
+    //Where we will insert message from friend
+    notification.soundName = @"tornado.mp3";
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+}
 -(IBAction)alarmsetbuttontTapped:(id)sensor; {
-    NSLog(@"Alarm Set Button Tapped" );
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.timeZone = [NSTimeZone defaultTimeZone];
+    dateFormatter.timeStyle = NSDateFormatterShortStyle;
+    dateFormatter.dateStyle = NSDateFormatterShortStyle;
+    
+    NSString *dateTmeString = [dateFormatter stringFromDate:dateTimePicker.date];
+    NSLog(@"Alarm Set Button Tapped: %@", dateTmeString);
+    
+    [self scheduleLocalNotificationWithDate: dateTimePicker.date];
+    
+    //[dateFormatter release];
+
 }
 
 -(IBAction)alarmcancelbuttontTapped:(id)sensor; {
