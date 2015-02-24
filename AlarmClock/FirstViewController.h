@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
+{
+    IBOutlet UIDatePicker *dateTimePicker;
+}
+
+-(IBAction) alarmsetbuttontTapped:(id)sensor;
+-(IBAction) alarmcancelbuttontTapped:(id)sensor;
 
 
 @end

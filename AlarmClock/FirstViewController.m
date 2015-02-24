@@ -24,4 +24,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)alarmsetbuttontTapped:(id)sensor; {
+    NSLog(@"Alarm Set Button Tapped" );
+}
+
+-(IBAction)alarmcancelbuttontTapped:(id)sensor; {
+    NSLog(@"Alarm Cancel Button Tapped");
+}
+
 @end
