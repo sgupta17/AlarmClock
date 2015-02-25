@@ -53,8 +53,6 @@
     NSLog(@"Alarm Set Button Tapped: %@", dateTmeString);
     
     [self scheduleLocalNotificationWithDate: dateTimePicker.date];
-    
-    //[dateFormatter release];
 
 }
 
