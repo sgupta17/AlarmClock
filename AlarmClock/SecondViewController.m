@@ -8,6 +8,7 @@
 
 #import "SecondViewController.h"
 
+
 @interface SecondViewController ()
 
 @end
@@ -22,6 +23,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)PlayTornadoSound:(id)sender {
+    NSString *effectTitle=@"tornado";
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:effectTitle ofType:@"wav"];
+    NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+    NSLog(@"%@", soundUrl);
+    
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundUrl, &soundID);
+    AudioServicesPlaySystemSound(soundID);
 }
 
 @end

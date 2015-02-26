@@ -38,7 +38,7 @@
     notification.fireDate = fireDate;
     notification.alertBody = @"Time to Wake Up";
     //Where we will insert message from friend
-    notification.soundName = @"tornado.mp3";
+    notification.soundName = @"tornado.wav";
     
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
 }
@@ -50,9 +50,12 @@
     dateFormatter.dateStyle = NSDateFormatterShortStyle;
     
     NSString *dateTmeString = [dateFormatter stringFromDate:dateTimePicker.date];
+    NSDate *temp = dateTimePicker.date;
+    NSTimeInterval timeNoSeconds=floor([temp timeIntervalSinceReferenceDate] / 60.0) * 60.0;
+    NSDate *dateNoSeconds = [NSDate dateWithTimeIntervalSinceReferenceDate:timeNoSeconds];
     NSLog(@"Alarm Set Button Tapped: %@", dateTmeString);
     
-    [self scheduleLocalNotificationWithDate: dateTimePicker.date];
+    [self scheduleLocalNotificationWithDate: dateNoSeconds];
 
 }
 
