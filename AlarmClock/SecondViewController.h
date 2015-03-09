@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface SecondViewController : UIViewController {
     SystemSoundID soundID;
@@ -15,4 +16,3 @@
 
 
 @end
-

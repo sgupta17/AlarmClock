@@ -8,7 +8,6 @@
 
 #import "SecondViewController.h"
 
-
 @interface SecondViewController ()
 
 @end
@@ -25,13 +24,15 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)PlayTornadoSound:(id)sender {
-    NSString *effectTitle=@"tornado";
-    NSString *soundPath = [[NSBundle mainBundle] pathForResource:effectTitle ofType:@"wav"];
-    NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
-    NSLog(@"%@", soundUrl);
+//    NSString *effectTitle=@"tornado";
+//    NSString *soundPath = [[NSBundle mainBundle] pathForResource:effectTitle ofType:@"wav"];
+//    NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+//    NSLog(@"%@", soundUrl);
+//    
+//    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundUrl, &soundID);
+//    NSLog(@"%u",(unsigned int)soundID);
+//    AudioServicesPlaySystemSound(1007);
     
-    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundUrl, &soundID);
-    AudioServicesPlaySystemSound(soundID);
 }
 
 @end
