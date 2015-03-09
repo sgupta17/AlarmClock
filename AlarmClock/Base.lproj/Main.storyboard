@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chg-7A-D3y">
-                                <rect key="frame" x="267" y="389" width="67" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chg-7A-D3y">
+                                <rect key="frame" x="267" y="290" width="67" height="30"/>
                                 <state key="normal" title="Set Alarm">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,8 +26,8 @@
                                     <action selector="alarmsetbuttontTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="jDj-wZ-Zbu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-OV-sX4">
-                                <rect key="frame" x="276" y="427" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-OV-sX4">
+                                <rect key="frame" x="276" y="328" width="48" height="30"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,8 +35,8 @@
                                     <action selector="alarmcancelbuttontTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="p9o-jC-pBx"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uht-yp-wqO">
-                                <rect key="frame" x="0.0" y="163" width="600" height="162"/>
+                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uht-yp-wqO">
+                                <rect key="frame" x="0.0" y="126" width="600" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="446409404.09274799">
                                     <!--2015-02-23 18:36:44 +0000-->
                                 </date>
@@ -46,9 +46,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="cHx-OV-sX4" secondAttribute="trailing" id="5WZ-5g-Lra"/>
+                            <constraint firstItem="uht-yp-wqO" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="106" id="9ur-7v-ret"/>
                             <constraint firstItem="Chg-7A-D3y" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="Mzg-eo-umW"/>
                             <constraint firstItem="cHx-OV-sX4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="UKw-M3-rBG"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="cHx-OV-sX4" secondAttribute="bottom" constant="193" id="ax6-a0-JCE"/>
+                            <constraint firstItem="Chg-7A-D3y" firstAttribute="top" secondItem="uht-yp-wqO" secondAttribute="bottom" constant="2" id="b3B-bV-Gko"/>
                             <constraint firstItem="uht-yp-wqO" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="e2u-xc-bhl"/>
+                            <constraint firstItem="cHx-OV-sX4" firstAttribute="top" secondItem="Chg-7A-D3y" secondAttribute="bottom" constant="8" id="juG-cO-xK8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uht-yp-wqO" secondAttribute="trailing" id="oS5-eR-nNL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Chg-7A-D3y" secondAttribute="trailing" id="rPd-vk-zeu"/>
                         </constraints>
@@ -74,8 +78,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kC7-l2-rvt">
-                                <rect key="frame" x="185" y="180" width="198" height="92"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kC7-l2-rvt">
+                                <rect key="frame" x="201" y="254" width="198" height="92"/>
                                 <state key="normal" title="Play Tornado Sound">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -85,6 +89,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kC7-l2-rvt" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="100" id="3nf-rH-AKC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kC7-l2-rvt" secondAttribute="trailing" constant="100" id="nMe-Tp-iAC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                 </viewController>
