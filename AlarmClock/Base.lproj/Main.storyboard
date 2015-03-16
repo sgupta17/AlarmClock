@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chg-7A-D3y">
-                                <rect key="frame" x="267" y="325" width="67" height="30"/>
+                                <rect key="frame" x="267" y="396" width="67" height="30"/>
                                 <state key="normal" title="Set Alarm">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHx-OV-sX4">
-                                <rect key="frame" x="276" y="363" width="48" height="30"/>
+                                <rect key="frame" x="276" y="434" width="48" height="30"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -36,14 +36,14 @@
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uht-yp-wqO">
-                                <rect key="frame" x="0.0" y="161" width="600" height="162"/>
+                                <rect key="frame" x="0.0" y="232" width="600" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="446409404.09274799">
                                     <!--2015-02-23 18:36:44 +0000-->
                                 </date>
                                 <locale key="locale" localeIdentifier="en_US"/>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Good Morning, ***!" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-dO-VZv">
-                                <rect key="frame" x="229" y="57" width="142" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Good Morning, ***!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-dO-VZv">
+                                <rect key="frame" x="229" y="180" width="142" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -51,10 +51,12 @@
                         <color key="backgroundColor" red="0.1813686907412585" green="1" blue="0.66371179827568816" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="eIl-dO-VZv" secondAttribute="trailing" constant="213" id="1eh-35-jGL"/>
+                            <constraint firstItem="eIl-dO-VZv" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="89" id="2Xr-9g-c8a"/>
+                            <constraint firstItem="Chg-7A-D3y" firstAttribute="top" secondItem="uht-yp-wqO" secondAttribute="bottom" constant="2" id="2pL-M4-KUk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cHx-OV-sX4" secondAttribute="trailing" id="5WZ-5g-Lra"/>
-                            <constraint firstItem="uht-yp-wqO" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="106" id="9ur-7v-ret"/>
                             <constraint firstItem="Chg-7A-D3y" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="Mzg-eo-umW"/>
                             <constraint firstItem="cHx-OV-sX4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="UKw-M3-rBG"/>
+                            <constraint firstItem="uht-yp-wqO" firstAttribute="top" secondItem="eIl-dO-VZv" secondAttribute="bottom" constant="22" id="Ypj-BR-FOW"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="cHx-OV-sX4" secondAttribute="bottom" constant="193" id="ax6-a0-JCE"/>
                             <constraint firstItem="Chg-7A-D3y" firstAttribute="top" secondItem="uht-yp-wqO" secondAttribute="bottom" constant="2" id="b3B-bV-Gko"/>
                             <constraint firstItem="uht-yp-wqO" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="e2u-xc-bhl"/>
