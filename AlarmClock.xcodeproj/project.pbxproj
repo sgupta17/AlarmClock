@@ -15,7 +15,7 @@
 		380F3EF01A9BA97600962671 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380F3EEF1A9BA97600962671 /* Images.xcassets */; };
 		380F3EF31A9BA97600962671 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380F3EF11A9BA97600962671 /* LaunchScreen.xib */; };
 		380F3EFF1A9BA97600962671 /* AlarmClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 380F3EFE1A9BA97600962671 /* AlarmClockTests.m */; };
-		A325E0C01AA5005200498ED7 /* tornado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A325E0BF1AA5005200498ED7 /* tornado.mp3 */; };
+		383FC4FB1AB74F0F00553E2F /* tornado.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 383FC4FA1AB74F0F00553E2F /* tornado.mp3 */; };
 		A325E0C21AA5035000498ED7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A325E0C11AA5035000498ED7 /* AVFoundation.framework */; };
 		A325E0C41AA5048000498ED7 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = A325E0C31AA5048000498ED7 /* AudioController.m */; };
 		A393F1DC1A9F77B7003AA7BE /* tornado.wav in Resources */ = {isa = PBXBuildFile; fileRef = A393F1DB1A9F77B7003AA7BE /* tornado.wav */; };
@@ -51,7 +51,7 @@
 		380F3EF81A9BA97600962671 /* AlarmClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlarmClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		380F3EFD1A9BA97600962671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		380F3EFE1A9BA97600962671 /* AlarmClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlarmClockTests.m; sourceTree = "<group>"; };
-		A325E0BF1AA5005200498ED7 /* tornado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tornado.mp3; path = ../../Desktop/tornado.mp3; sourceTree = "<group>"; };
+		383FC4FA1AB74F0F00553E2F /* tornado.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tornado.mp3; path = ../../Downloads/tornado.mp3; sourceTree = "<group>"; };
 		A325E0C11AA5035000498ED7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A325E0C31AA5048000498ED7 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioController.m; sourceTree = "<group>"; };
 		A325E0C51AA504A100498ED7 /* AudioController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioController.h; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 				A325E0C11AA5035000498ED7 /* AVFoundation.framework */,
 				A393F1DD1A9F794F003AA7BE /* AudioToolbox.framework */,
 				A393F1DB1A9F77B7003AA7BE /* tornado.wav */,
-				A325E0BF1AA5005200498ED7 /* tornado.mp3 */,
+				383FC4FA1AB74F0F00553E2F /* tornado.mp3 */,
 				380F3EDE1A9BA97500962671 /* AlarmClock */,
 				380F3EFB1A9BA97600962671 /* AlarmClockTests */,
 				380F3EDD1A9BA97500962671 /* Products */,
@@ -204,6 +204,7 @@
 				TargetAttributes = {
 					380F3EDB1A9BA97500962671 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = ACPGVPPM2P;
 					};
 					380F3EF71A9BA97600962671 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -236,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				380F3EEE1A9BA97600962671 /* Main.storyboard in Resources */,
-				A325E0C01AA5005200498ED7 /* tornado.mp3 in Resources */,
+				383FC4FB1AB74F0F00553E2F /* tornado.mp3 in Resources */,
 				380F3EF31A9BA97600962671 /* LaunchScreen.xib in Resources */,
 				A393F1DC1A9F77B7003AA7BE /* tornado.wav in Resources */,
 				380F3EF01A9BA97600962671 /* Images.xcassets in Resources */,
