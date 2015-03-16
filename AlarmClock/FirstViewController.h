@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JBDeviceOwner/JBDeviceOwner.h>
 
 @interface FirstViewController : UIViewController
 {
