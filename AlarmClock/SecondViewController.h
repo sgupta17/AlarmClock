@@ -14,5 +14,6 @@
     SystemSoundID soundID;
 }
 
+- (IBAction)PlaySound:(UIButton *)sender;
 
 @end

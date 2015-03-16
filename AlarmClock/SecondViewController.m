@@ -35,4 +35,7 @@
     
 }
 
+- (IBAction)PlaySound:(UIButton *)sender {
+    AudioServicesPlaySystemSound(1007);
+}
 @end
