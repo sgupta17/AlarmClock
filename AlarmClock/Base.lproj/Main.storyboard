@@ -42,14 +42,15 @@
                                 </date>
                                 <locale key="locale" localeIdentifier="en_US"/>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Good Morning, ***!" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-dO-VZv">
-                                <rect key="frame" x="267" y="48" width="142" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Good Morning, ***!" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-dO-VZv">
+                                <rect key="frame" x="229" y="57" width="142" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.1813686907412585" green="1" blue="0.66371179827568816" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eIl-dO-VZv" secondAttribute="trailing" constant="213" id="1eh-35-jGL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cHx-OV-sX4" secondAttribute="trailing" id="5WZ-5g-Lra"/>
                             <constraint firstItem="uht-yp-wqO" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="106" id="9ur-7v-ret"/>
                             <constraint firstItem="Chg-7A-D3y" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="Mzg-eo-umW"/>
@@ -58,6 +59,7 @@
                             <constraint firstItem="Chg-7A-D3y" firstAttribute="top" secondItem="uht-yp-wqO" secondAttribute="bottom" constant="2" id="b3B-bV-Gko"/>
                             <constraint firstItem="uht-yp-wqO" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="e2u-xc-bhl"/>
                             <constraint firstItem="cHx-OV-sX4" firstAttribute="top" secondItem="Chg-7A-D3y" secondAttribute="bottom" constant="8" id="juG-cO-xK8"/>
+                            <constraint firstItem="eIl-dO-VZv" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="213" id="kHr-CU-vCk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uht-yp-wqO" secondAttribute="trailing" id="oS5-eR-nNL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Chg-7A-D3y" secondAttribute="trailing" id="rPd-vk-zeu"/>
                         </constraints>
