@@ -36,6 +36,13 @@
 }
 
 - (IBAction)PlaySound:(UIButton *)sender {
-    AudioServicesPlaySystemSound(1007);
+    NSString *effectTitle=@"tornado";
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:effectTitle ofType:@"wav"];
+    NSURL *soundUrl = [NSURL fileURLWithPath:soundPath];
+    NSLog(@"%@", soundUrl);
+    
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundUrl, &soundID);
+    NSLog(@"%u",(unsigned int)soundID);
+    AudioServicesPlaySystemSound(soundID);
 }
 @end
