@@ -35,6 +35,11 @@
                                     <action selector="alarmcancelbuttontTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="p9o-jC-pBx"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Good Morning, ***!" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-dO-VZv">
+                                <rect key="frame" x="189" y="194" width="182" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="uht-yp-wqO">
                                 <rect key="frame" x="0.0" y="232" width="600" height="162"/>
                                 <date key="date" timeIntervalSinceReferenceDate="446409404.09274799">
@@ -42,11 +47,6 @@
                                 </date>
                                 <locale key="locale" localeIdentifier="en_US"/>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Good Morning, ***!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-dO-VZv">
-                                <rect key="frame" x="229" y="194" width="142" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.1813686907412585" green="1" blue="0.66371179827568816" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
