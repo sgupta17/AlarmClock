@@ -42,7 +42,7 @@
                                 </date>
                                 <locale key="locale" localeIdentifier="en_US"/>
                             </datePicker>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Good Morning, ***!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-dO-VZv">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Good Morning, ***!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-dO-VZv">
                                 <rect key="frame" x="229" y="194" width="142" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -53,13 +53,16 @@
                             <constraint firstItem="Chg-7A-D3y" firstAttribute="top" secondItem="uht-yp-wqO" secondAttribute="bottom" constant="2" id="2pL-M4-KUk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cHx-OV-sX4" secondAttribute="trailing" id="5WZ-5g-Lra"/>
                             <constraint firstItem="Chg-7A-D3y" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="Mzg-eo-umW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eIl-dO-VZv" secondAttribute="trailing" constant="100" id="Rc6-Ls-7Ez"/>
                             <constraint firstItem="cHx-OV-sX4" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="UKw-M3-rBG"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="cHx-OV-sX4" secondAttribute="bottom" constant="193" id="ax6-a0-JCE"/>
                             <constraint firstItem="Chg-7A-D3y" firstAttribute="top" secondItem="uht-yp-wqO" secondAttribute="bottom" constant="2" id="b3B-bV-Gko"/>
                             <constraint firstItem="uht-yp-wqO" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="e2u-xc-bhl"/>
+                            <constraint firstItem="uht-yp-wqO" firstAttribute="top" secondItem="eIl-dO-VZv" secondAttribute="bottom" constant="8" id="gHK-vY-Ue2"/>
                             <constraint firstItem="cHx-OV-sX4" firstAttribute="top" secondItem="Chg-7A-D3y" secondAttribute="bottom" constant="8" id="juG-cO-xK8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uht-yp-wqO" secondAttribute="trailing" id="oS5-eR-nNL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Chg-7A-D3y" secondAttribute="trailing" id="rPd-vk-zeu"/>
+                            <constraint firstItem="cHx-OV-sX4" firstAttribute="top" secondItem="Chg-7A-D3y" secondAttribute="bottom" constant="8" id="uxs-oF-DqW"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
